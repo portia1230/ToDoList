@@ -56,7 +56,6 @@ class ToDoTableViewController : UITableViewController {
         cell.dateCreatedLabel.text = task.dateCreated?.convertToString()
         
         
-        
         return cell
     }
     

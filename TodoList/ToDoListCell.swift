@@ -21,5 +21,11 @@ class ToDoListCell : UITableViewCell {
     
     //functions
     @IBAction func markButtonTapped(_ sender: Any) {
+        if markColorButton.currentTitleColor == UIColor.red{
+        markColorButton.setTitleColor(UIColor.green, for: .normal)
+        }else{
+            markColorButton.setTitleColor(UIColor.red, for: .normal)
+        }
+        
     }
 }

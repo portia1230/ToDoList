@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		835DCC051EFDDFA2007EE1DB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DCC041EFDDFA2007EE1DB /* CustomButton.swift */; };
 		83A740DC1EFD7E6700440EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A740DB1EFD7E6700440EAE /* AppDelegate.swift */; };
 		83A740DE1EFD7E6700440EAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A740DD1EFD7E6700440EAE /* ViewController.swift */; };
 		83A740E11EFD7E6700440EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A740DF1EFD7E6700440EAE /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		835DCC041EFDDFA2007EE1DB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = "../../../../Desktop/makeschool files/github custom/CustomButton.swift"; sourceTree = "<group>"; };
 		83A740D81EFD7E6700440EAE /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A740DB1EFD7E6700440EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A740DD1EFD7E6700440EAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		83A740DA1EFD7E6700440EAE /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				835DCC041EFDDFA2007EE1DB /* CustomButton.swift */,
 				83A740FA1EFDB74E00440EAE /* CoreDataHelper.swift */,
 				83A740DB1EFD7E6700440EAE /* AppDelegate.swift */,
 				83A740F91EFD945A00440EAE /* Extensions */,
@@ -183,6 +186,7 @@
 			files = (
 				83A740F31EFD8B3D00440EAE /* DisplayTaskViewController.swift in Sources */,
 				83A740F81EFD945300440EAE /* Date+convertToString.swift in Sources */,
+				835DCC051EFDDFA2007EE1DB /* CustomButton.swift in Sources */,
 				83A740FB1EFDB74E00440EAE /* CoreDataHelper.swift in Sources */,
 				83A740DE1EFD7E6700440EAE /* ViewController.swift in Sources */,
 				83A740EE1EFD7F5600440EAE /* ToDoTableViewController.swift in Sources */,
@@ -354,6 +358,7 @@
 				83A740EC1EFD7E6700440EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
