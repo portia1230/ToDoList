@@ -27,8 +27,8 @@ class ToDoTableViewController : UITableViewController {
                 
                 let indexPath = tableView.indexPathForSelectedRow!
                 let task = toDoList[indexPath.row]
-                let displayTaskViewController = segue.destination as! DisplayTaskViewController
-                displayTaskViewController.task = task
+//                let displayTaskViewController = segue.destination as! DisplayTaskViewController
+//                displayTaskViewController.task = task
                 
             }
                 else if identifier == "addTask"{

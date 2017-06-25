@@ -76,9 +76,9 @@
 				83A740F61EFD922500440EAE /* Models */,
 				83A740F11EFD830300440EAE /* Controllers */,
 				83A740EF1EFD82F800440EAE /* ToDoListCell.swift */,
+				83A740E41EFD7E6700440EAE /* LaunchScreen.storyboard */,
 				83A740DF1EFD7E6700440EAE /* Main.storyboard */,
 				83A740E21EFD7E6700440EAE /* Assets.xcassets */,
-				83A740E41EFD7E6700440EAE /* LaunchScreen.storyboard */,
 				83A740E71EFD7E6700440EAE /* Info.plist */,
 			);
 			path = TodoList;

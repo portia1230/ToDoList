@@ -21,10 +21,13 @@ class ToDoListCell : UITableViewCell {
     
     //functions
     @IBAction func markButtonTapped(_ sender: Any) {
-        if markColorButton.currentTitleColor == UIColor.red{
+        if markColorButton.currentTitle == "incomplete" {
         markColorButton.setTitleColor(UIColor.green, for: .normal)
+           markColorButton.setTitle("done", for: .normal)
+            
         }else{
             markColorButton.setTitleColor(UIColor.red, for: .normal)
+            markColorButton.setTitle("incomplete", for: .normal)
         }
         
     }

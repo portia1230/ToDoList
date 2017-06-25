@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dWU-nd-WQI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rUY-Dh-EQo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,10 +14,10 @@
         <scene sceneID="0Ga-57-YmX">
             <objects>
                 <tableViewController id="n7C-Xd-HYY" customClass="ToDoTableViewController" customModule="TodoList" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" id="7ip-C4-XL3">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" id="7ip-C4-XL3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.78556169899999995" green="1" blue="0.93939963169999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="toDoCell" rowHeight="130" id="ufW-1z-xmw" customClass="ToDoListCell" customModule="TodoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="130"/>
@@ -26,32 +26,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXq-YQ-AAP">
-                                            <rect key="frame" x="22" y="2" width="136" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXq-YQ-AAP">
+                                            <rect key="frame" x="22" y="2" width="51" height="33"/>
                                             <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Created" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-aS-qAd">
-                                            <rect key="frame" x="22" y="35" width="159" height="42"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Created" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-aS-qAd">
+                                            <rect key="frame" x="22" y="36" width="159" height="41"/>
                                             <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU6-va-jdF">
-                                            <rect key="frame" x="22" y="84" width="309" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p31-8J-uV8" customClass="CustomButton" customModule="TodoList" customModuleProvider="target">
-                                            <rect key="frame" x="189" y="10" width="167" height="111"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <state key="normal" title="Mark as Complete">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p31-8J-uV8" customClass="CustomButton" customModule="TodoList" customModuleProvider="target">
+                                            <rect key="frame" x="200" y="26" width="160" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="167" id="GI9-oc-wMH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
+                                            <state key="normal" title="incomplete">
                                                 <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
@@ -63,15 +56,36 @@
                                                 <action selector="markButtonTapped:" destination="ufW-1z-xmw" eventType="touchUpInside" id="81G-SU-Qdc"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU6-va-jdF">
+                                            <rect key="frame" x="22" y="88" width="309" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="SgQ-Oc-q4B"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="18"/>
+                                            <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HU6-va-jdF" firstAttribute="leading" secondItem="21V-sk-osv" secondAttribute="leadingMargin" constant="14" id="07h-ab-5AZ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="HU6-va-jdF" secondAttribute="bottom" constant="15.5" id="HFC-vv-Mqf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="HU6-va-jdF" secondAttribute="trailing" constant="36" id="JzV-WX-D1m"/>
+                                        <constraint firstItem="HU6-va-jdF" firstAttribute="leading" secondItem="TXq-YQ-AAP" secondAttribute="leading" id="KzC-RD-XFI"/>
+                                        <constraint firstItem="p31-8J-uV8" firstAttribute="leading" secondItem="SvD-aS-qAd" secondAttribute="trailing" constant="8" symbolic="YES" id="M4Y-cB-Hvw"/>
+                                        <constraint firstItem="p31-8J-uV8" firstAttribute="centerY" secondItem="SvD-aS-qAd" secondAttribute="centerY" id="Ns9-Fp-lo2"/>
+                                        <constraint firstItem="HU6-va-jdF" firstAttribute="leading" secondItem="SvD-aS-qAd" secondAttribute="leading" id="V9L-bE-gBW"/>
+                                        <constraint firstItem="p31-8J-uV8" firstAttribute="top" secondItem="21V-sk-osv" secondAttribute="topMargin" constant="-7" id="WE6-C8-RGq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="p31-8J-uV8" secondAttribute="bottom" constant="9.5" id="X6l-BR-hoq"/>
+                                        <constraint firstItem="HU6-va-jdF" firstAttribute="top" secondItem="SvD-aS-qAd" secondAttribute="bottom" constant="8" symbolic="YES" id="pGL-aU-bUy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="p31-8J-uV8" secondAttribute="trailing" constant="11" id="ua4-Ma-xN4"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.94331764995713119" green="0.97591790043704396" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dateCreatedLabel" destination="SvD-aS-qAd" id="O45-Bm-nyI"/>
                                     <outlet property="descriptionLabel" destination="HU6-va-jdF" id="WNy-ae-MHG"/>
                                     <outlet property="markColorButton" destination="p31-8J-uV8" id="n8c-Qb-0P3"/>
                                     <outlet property="nameLabel" destination="TXq-YQ-AAP" id="mv9-dH-msW"/>
-                                    <segue destination="8Sx-fj-mph" kind="show" identifier="showDescription" id="s3F-Xf-R30"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -83,14 +97,14 @@
                     <navigationItem key="navigationItem" title="Tasks" id="Z1X-Lu-3yb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ipx-fY-VKd">
                             <connections>
-                                <segue destination="8Sx-fj-mph" kind="show" identifier="addTask" id="Rs6-LB-XQd"/>
+                                <segue destination="8Sx-fj-mph" kind="show" identifier="addTask" id="hNu-dS-L6E"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TBT-2r-kAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="99.400299850074973"/>
+            <point key="canvasLocation" x="2007.2" y="99.400299850074973"/>
         </scene>
         <!--Task-->
         <scene sceneID="a1L-iF-k4P">
@@ -104,31 +118,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKQ-R7-bdU">
-                                <rect key="frame" x="41" y="109" width="232" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="211" id="LjT-id-eMx"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter TItle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKQ-R7-bdU">
+                                <rect key="frame" x="41" y="109" width="280" height="30"/>
                                 <color key="textColor" red="1" green="0.58727889073321993" blue="0.19632499878406362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gdq-vA-HC8">
-                                <rect key="frame" x="41" y="156" width="280" height="286"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gdq-vA-HC8">
+                                <rect key="frame" x="41" y="155" width="280" height="291"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="1" green="0.58727889069999994" blue="0.19632499880000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGM-Zx-uo4">
+                                <rect key="frame" x="239" y="580" width="120" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="PRw-tZ-aPP"/>
+                                    <constraint firstAttribute="height" constant="23" id="hLo-57-H2K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Trebuchet-BoldItalic" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tKQ-R7-bdU" firstAttribute="leading" secondItem="Gdq-vA-HC8" secondAttribute="leading" id="ATb-zt-lcQ"/>
-                            <constraint firstItem="tKQ-R7-bdU" firstAttribute="leading" secondItem="CNm-h7-giG" secondAttribute="leadingMargin" constant="25" id="XDU-zx-Xhp"/>
-                            <constraint firstItem="wnc-Ny-7pI" firstAttribute="top" secondItem="Gdq-vA-HC8" secondAttribute="bottom" constant="182" id="iyr-4B-cf9"/>
-                            <constraint firstItem="Gdq-vA-HC8" firstAttribute="top" secondItem="tKQ-R7-bdU" secondAttribute="bottom" constant="17" id="m0M-gJ-hzz"/>
-                            <constraint firstItem="tKQ-R7-bdU" firstAttribute="top" secondItem="c3g-0K-Nz8" secondAttribute="bottom" constant="45" id="o2a-s8-Mtd"/>
-                            <constraint firstItem="Gdq-vA-HC8" firstAttribute="centerX" secondItem="CNm-h7-giG" secondAttribute="centerX" id="z0t-Jh-7PK"/>
+                            <constraint firstItem="tKQ-R7-bdU" firstAttribute="trailing" secondItem="Gdq-vA-HC8" secondAttribute="trailing" id="3YG-i2-JHE"/>
+                            <constraint firstItem="jGM-Zx-uo4" firstAttribute="trailing" secondItem="CNm-h7-giG" secondAttribute="trailingMargin" id="5AS-J0-Pyh"/>
+                            <constraint firstItem="wnc-Ny-7pI" firstAttribute="top" secondItem="jGM-Zx-uo4" secondAttribute="bottom" constant="20" id="BzS-ES-sPF"/>
+                            <constraint firstItem="Gdq-vA-HC8" firstAttribute="top" secondItem="tKQ-R7-bdU" secondAttribute="bottom" constant="16" id="Ea5-7G-9PB"/>
+                            <constraint firstItem="tKQ-R7-bdU" firstAttribute="leading" secondItem="CNm-h7-giG" secondAttribute="leadingMargin" constant="25" id="Ns2-ID-jGd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tKQ-R7-bdU" secondAttribute="trailing" constant="38" id="n6K-Rg-7hK"/>
+                            <constraint firstItem="tKQ-R7-bdU" firstAttribute="top" secondItem="c3g-0K-Nz8" secondAttribute="bottom" constant="45" id="qgc-tC-mDv"/>
+                            <constraint firstItem="tKQ-R7-bdU" firstAttribute="leading" secondItem="Gdq-vA-HC8" secondAttribute="leading" id="tXH-IL-kui"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -146,6 +170,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="dateCreatedTextField" destination="jGM-Zx-uo4" id="Ncm-Ko-wjM"/>
                         <outlet property="taskDescriptionTextField" destination="Gdq-vA-HC8" id="Wm0-QF-uUj"/>
                         <outlet property="taskTitleTextField" destination="tKQ-R7-bdU" id="sgD-9l-v6w"/>
                     </connections>
@@ -153,28 +178,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4q-QQ-KGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Kmy-fh-W4q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1832.8" y="99.400299850074973"/>
+            <point key="canvasLocation" x="2772" y="99.400299850074973"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ibZ-dA-kKV">
+        <scene sceneID="hGj-30-Qwj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dWU-nd-WQI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rUY-Dh-EQo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f1N-FT-CPa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6I6-4k-4Ho">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="n7C-Xd-HYY" kind="relationship" relationship="rootViewController" id="ZWs-Bg-niC"/>
+                        <segue destination="n7C-Xd-HYY" kind="relationship" relationship="rootViewController" id="3qp-yh-0qr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KJ5-sB-nEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubu-Es-kFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="99.400299850074973"/>
+            <point key="canvasLocation" x="1068" y="99.400299850074973"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="s3F-Xf-R30"/>
-    </inferredMetricsTieBreakers>
 </document>

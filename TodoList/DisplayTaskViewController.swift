@@ -14,6 +14,7 @@ class DisplayTaskViewController : UIViewController {
     
     @IBOutlet weak var taskTitleTextField: UITextField!
     @IBOutlet weak var taskDescriptionTextField: UITextView!
+    @IBOutlet weak var dateCreatedTextField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +26,11 @@ class DisplayTaskViewController : UIViewController {
         if let task = task{
             taskTitleTextField.text = task.name
             taskDescriptionTextField.text = task.myDescription
+            dateCreatedTextField.text = task.dateCreated?.convertToString()
         }else{
             
         taskTitleTextField.text = ""
-        taskDescriptionTextField.text = ""
+        taskDescriptionTextField.text = "enter task description"
         }
         
     }
